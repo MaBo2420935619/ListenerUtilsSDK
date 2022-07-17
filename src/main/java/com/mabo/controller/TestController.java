@@ -15,6 +15,4 @@ public class TestController {
         String event = this.event.event("测试数据");
         return event;
     }
-
-
 }
