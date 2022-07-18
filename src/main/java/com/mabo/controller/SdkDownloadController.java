@@ -1,7 +1,6 @@
 package com.mabo.controller;
 
 
-import com.mabo.entity.History;
 import com.mabo.service.ListenerSdkDownloadService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,10 +13,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 @RestController
 @RequestMapping("download")
-public class ListenerSdkDownloadController {
+public class SdkDownloadController {
 
     //下载文件地址  http://localhost:8081/download/listenerSdk
-    private  static Logger log = LoggerFactory.getLogger(ListenerSdkDownloadController.class);
+    private  static Logger log = LoggerFactory.getLogger(SdkDownloadController.class);
     @Autowired
     private ListenerSdkDownloadService downloadService;
 
